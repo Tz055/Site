@@ -1,0 +1,77 @@
+/* .one {
+    display: grid;
+}
+
+.papa {
+    display: flex;
+    flex-direction: row;
+    padding: 32vw;
+    height: 70vh;
+}
+
+.ivan {
+    right: 200px;
+    top: 20px;
+    position: absolute;
+} */
+body {
+    background-image: url(img/1676202544_pudgedance-pudge.gif);
+}
+
+.text-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 5vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    -webkit-animation: color-change 1s infinite;
+    -moz-animation: color-change 1s infinite;
+    -o-animation: color-change 1s infinite;
+    -ms-animation: color-change 1s infinite;
+    animation: color-change 1s infinite;
+}
+@-webkit-keyframes color-change {
+    0% { color: red; }
+    50% { color: blue; }
+    100% { color: red; }
+}
+@-moz-keyframes color-change {
+    0% { color: red; }
+    50% { color: blue; }
+    100% { color: red; }
+}
+@-ms-keyframes color-change {
+    0% { color: red; }
+    50% { color: blue; }
+    100% { color: red; }
+}
+@-o-keyframes color-change {
+    0% { color: red; }
+    50% { color: blue; }
+    100% { color: red; }
+}
+@keyframes color-change {
+    0% { color: red; }
+    50% { color: blue; }
+    100% { color: red; }
+}
+
+.center-div {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3vw;
+}
+
+.papa-niz {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-decoration: none;
+    padding: auto;
+    border-radius: 15px;
+
+}
