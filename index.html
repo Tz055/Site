@@ -1,20 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>GDE PAPA</title>
-        <link rel="stylesheet" type="text/css" href="styles.css">
-    </head>
-    <body>
-        <h3 class="text-center">GDE PAPA?</h3>
-        <div class="main">
-        <div class="center-div">
-            <img src="img/image (22).png">
-            <div >
-                <!-- <p class="papa-niz">Male DOB 7/8/95</p> -->
-                <p class="papa-niz"></p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/xp.css@0.2.3/dist/98.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/fixedsys-css/css/fixedsys.css">
+    <title>Document</title>
+
+</head>
+<body onload="printMess()">
+    <header>
+            <ul>
+                <li><a class="w400" href="">Главная</a></li>
+                <li><a class="w400" href="">Магазин</a></li>
+                <li><a class="w400" href="">О нас</a></li>
+                <li><a class="w400" href="">Связь</a></li>
+                <li><a class="w400" href="">Компания</a></li>
+            </ul>
+    </header>
+    <div class="window center-main-text" style="width: 50vw; font-size: large;">
+        <div class="title-bar">
+          <div class="title-bar-text" style="font-size: large;">
+            <p>Добро пожаловать!</p>
+          </div>
+          <div class="title-bar-controls">
+            <button aria-label="Minimize" onclick="minimizeButton()"></button>
+            <button aria-label="Maximize" onclick="maximizeButton()"></button>
+            <button aria-label="Close" onclick="closeButton()" style="margin-left: 0px; margin-right: 20px;"></button>
+          </div>
+        </div>
+        <div class="window-body">   
+            <p>
+                <div class="strok" id="result"></div>
+            </p>
+        </div>
+      </div>
+    <script>
+        function minimizeButton(){
+            alert('Преставь, что страничка свернулась')
+        }
+        function maximizeButton(){
+            alert('Я тоже люблю разворачивать странички ":D')
+        }
+        function closeButton(){
+            const value = Math.floor(Math.random() * 3)
+            if (value == 0) alert("Так ты со мной, да? T~T")
+            else if (value == 1) alert("Тебя так бесит эта табличка? :,c")
+            else alert("Я найду тебя и съем -,..,-")
+        }
+    </script>
+<!--     
+     <div class="center-main-text">
+        <div style="color: white;">
+            <h1 class="hero-text">Тут живут динозавры.</h1>
+            <h4>*Не настоящие, к сожалению </h4>
+        </div>
+     </div> -->
+    <div class="wrapper wrpe">
+        <img src="img/good-background-kmu8cb0wygf7juzz.png" alt="">
+    </div>
+
+    <div class="grid-div">
+        <div class="grid-component">
+            <div class="card"> 
+                <img src="img/monitor.jpg">
+                <h2>Мониторы</h2>
             </div>
+            <p>A</p>
+            <p>A</p>
+            <p>A</p>
+            <p>A</p>
+            <p>A</p>
         </div>
-        </div>
-    </body>
+    </div>
+    <script>
+        function printMess() {
+        var text = "Это сайт-музей, предназаначенный для визуального и технического ознакомления с техникой времён 2000-х.";
+        var delay = 50;
+        var elem = document.getElementById("result");
+        var print_text = function(text, elem, delay) {
+            if(text.length > 0){
+                elem.innerHTML += text[0];
+                setTimeout (
+                    function() {
+                        print_text(text.slice(1), elem, delay);
+                    }, delay
+                );
+            }
+        }
+        print_text(text, elem, delay);
+    }
+    </script>
+</body>
+</html>
