@@ -10,14 +10,16 @@
 
 </head>
 <body onload="printMess()">
-    <header>
+    <header class="window">
+        <div class="title-bar title-bar-head">
             <ul>
-                <li><a class="w400" href="">Главная</a></li>
-                <li><a class="w400" href="">Магазин</a></li>
-                <li><a class="w400" href="">О нас</a></li>
-                <li><a class="w400" href="">Связь</a></li>
-                <li><a class="w400" href="">Компания</a></li>
+                <li><button href="">Главная</button></li>
+                <li><button href="">Магазин</button></li>
+                <li><button href="">О нас</button></li>
+                <li><button href="">Связь</button></li>
+                <li><button href="">ПОМОГИТЕ МНЕ БЛЯТЬ</button></li>
             </ul>
+        </div>
     </header>
     <div class="window center-main-text" style="width: 50vw; font-size: large;">
         <div class="title-bar">
@@ -31,14 +33,12 @@
           </div>
         </div>
         <div class="window-body">   
-            <p>
                 <div class="strok" id="result"></div>
-            </p>
         </div>
       </div>
     <script>
         function minimizeButton(){
-            alert('Преставь, что страничка свернулась')
+            alert('Преставь, что страничка свернулась xDD')
         }
         function maximizeButton(){
             alert('Я тоже люблю разворачивать странички ":D')
@@ -60,20 +60,78 @@
     <div class="wrapper wrpe">
         <img src="img/good-background-kmu8cb0wygf7juzz.png" alt="">
     </div>
-
-    <div class="grid-div">
-        <div class="grid-component">
-            <div class="card"> 
-                <img src="img/monitor.jpg">
-                <h2>Мониторы</h2>
+    <img class="absolute-center" style="right: 5px;" src="img/c6afab251a20e6d0eb80b983450bc66e_w200.gif" alt="">
+        <div class="grid-component"> 
+            <!-- Чё ваще запихнуть можно: -->
+            <!-- Моники, Мышки, клавы, колонки, наушники, плееры, Приставки, +1 -->
+            <div class="window" >
+                <div class="title-bar">
+                <div class="title-bar-text">Мониторы</div>
+                </div>
+                <div class="window-body">
+                    <img src="img/monitor.jpg">
+                    <p>Известны тем, что умеют показывать картинки, смешные видео с котами и анимешки.</p>
+                </div>
             </div>
-            <p>A</p>
-            <p>A</p>
-            <p>A</p>
-            <p>A</p>
-            <p>A</p>
+            <!-- Клавы -->
+            <div class="window" >
+                <div class="title-bar">
+                <div class="title-bar-text">Клавиатуры</div>
+                </div>
+                <div class="window-body">
+                    <img src="img/628e2db540f881859af2c6c95706ec77.jpg">
+                    <p>Помогают печатать сообщения в Аське, кушать крошки от бутербродов и играть в компьютерные игры стрелочками.</p>
+                </div>
+            </div>
+            <!-- Мышки -->
+            <div class="window" >
+                <div class="title-bar">
+                <div class="title-bar-text">Мышки</div>
+                </div>
+                <div class="window-body">
+                    <img src="img/defender-130-1.jpg">
+                    <p>Управление курсором на экране никак не обойдётся без этих приятелей. Не забудьте почистить шарик от пыли !!!</p>
+                </div>
+            </div>
+            <!-- Наушники -->
+            <div class="window" >
+                <div class="title-bar">
+                <div class="title-bar-text">Наушники</div>
+                </div>
+                <div class="window-body">
+                    <img src="img/08t6qugt58zoo36glpebzdbkltmywxzt.jpeg">
+                    <p>Хотите послушать новую песню Gorillaz или Глюк'oZы? Вам точно сюда!</p>
+                </div>
+            </div>
+            <!-- Плееры -->
+            <div class="window" >
+                <div class="title-bar">
+                <div class="title-bar-text">Плееры</div>
+                </div>
+                <div class="window-body">
+                    <img src="img/1200px-Sony-wm-fx421-walkman.jpg">
+                    <p>Для комфортной поездки на скейте нет ничего лучше музыки, не забудьте взять с собой свой Walkman!</p>
+                </div>
+            </div>
+            <!-- Приставки   -->
+            <div class="window">
+                <div class="title-bar">
+                <div class="title-bar-text">Приставки</div>
+                </div>
+                <div class="window-body">
+                    <img src="img/ZX_Spectrum+.jpg">
+                    <p>Самое то для того, чтобы поиграть в нововышедший Super Mario Bros, позвать друга для игры в танчики или научиться программировать на Ассемблере</p>
+                </div>
+            </div>
         </div>
-    </div>
+
+    <footer>
+        <div class="title-bar flex-bar">
+            <div class="title-bar-text" style="margin-left: 1vw;">Сайт был разработан Жиляевым Евгением</div>
+            <div class="title-bar-text">© Копирайты все скопирайтили гы-гы-гы</div>
+          </div>
+    </footer>
+
     <script>
         function printMess() {
         var text = "Это сайт-музей, предназаначенный для визуального и технического ознакомления с техникой времён 2000-х.";
