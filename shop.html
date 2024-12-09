@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/xp.css@0.2.3/dist/98.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/fixedsys-css/css/fixedsys.css">
+    <link rel="icon" href="favicon.ico">
+    <title>Магазин</title>
+
+</head>
+<body onload="printMess()">
+    <header class="window">
+        <div class="title-bar title-bar-head">
+            <ul>
+                <li><button onclick="location.href='/index.html'">Главная</button></li>
+                <li><button onclick="location.href='/shop.html'">Магазин</button></li>
+                <li><button onclick="location.href='/about.html'">О нас</button></li>
+                <li><button onclick="location.href='/contact.html'">Связь</button></li>
+                <li><button onclick="rickroll()">Пугалка</button></li>
+            </ul>
+        </div>
+    </header>
+    <script>
+        function rickroll(){
+        window.location.replace("https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUM0YDQuNC60YDQvtC7");
+    }
+    function index(){
+        window.location.replace("/index.html");
+    }
+    function ivan(){
+        window.location.replace("/ivan.html")
+    }
+    function aboutUs(){
+        window.location.replace("/about.html")
+    }
+    </script>
+
+    <header class="mobile-header">
+        <div id="mySidenav" class="sidenav">
+            <div class="title-bar-controls">
+            <button href="javascript:void(0)" class="closebtn" aria-label="Close" onclick="closeNav()"></button>
+            </div>
+            <!-- <a href="javascript:void(0)" class="closebtn" aria-label="Minimize" onclick="closeNav()">&times;</a> -->
+            <li><button onclick="location.href='/index.html'">Главная</button></li>
+            <li><button onclick="location.href='/shop.html'">Магазин</button></li>
+            <li><button onclick="location.href='/about.html'">О нас</button></li>
+            <li><button onclick="location.href='/contact.html'">Связь</button></li>
+            <li><button onclick="rickroll()">Пугалка</button></li>
+        </div>
+        <div class="title-bar-controls">
+            <button aria-label="Maximize" onclick="openNav()"></button>
+        </div>
+        <div id="main"></div>
+        <script>
+            function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+    }
+    
+    /* Set the width of the side navigation to 0 */
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+        </script>
+    </header>
+<!--  -->
+<div class="window" style="height: 1500px;"></div>
+<!--  -->
+
+<footer>
+    <div class="title-bar flex-bar">
+        <div class="title-bar-text" style="margin-left: 1vw;">Сайт был разработан Жиляевым Евгением</div>
+        <div class="title-bar-text" onclick="ivan()">© Копирайты все скопирайтили гы-гы-гы</div>
+      </div>
+</footer>
