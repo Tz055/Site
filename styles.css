@@ -208,11 +208,32 @@ header {
     display: flex;
     justify-content: space-around;
 }
+.about-us-img-mob {
+    display: none;
+}
 .about-us-img img {
     max-width: 20%;
 }
+.console-mob {
+    display: none;
+}
+.console-mob-small {display: none;}
 /*  МОБИЛКА */
+@media (max-width: 728px){
+    .console-mob {display: block;}
+    .console-pc {display: none;}
+    .console-mob-small {display: none;}
+}
 @media (max-width: 500px) {
+    .about-us-img {
+        display: none;
+    }
+    .about-us-img-mob {
+        display: flex;
+        flex-direction: column;
+        margin: 2vw;
+    }
+ 
     .sidenav {
         height: 100%; 
         width: 0; 
@@ -331,6 +352,9 @@ header {
     }
 }
 @media (max-width: 387px) {
+    .console-mob {display: none;}
+    .console-pc {display: none;}
+    .console-mob-small {display: block;}
     .sidenav {
         height: 100%; 
         width: 0; 
