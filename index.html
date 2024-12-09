@@ -17,20 +17,57 @@
                 <li><button href="">Магазин</button></li>
                 <li><button href="">О нас</button></li>
                 <li><button href="">Связь</button></li>
-                <li><button href="">ПОМОГИТЕ МНЕ БЛЯТЬ</button></li>
+                <li><button onclick="rickroll()">Пугалка</button></li>
             </ul>
         </div>
     </header>
+    <script>
+        function rickroll(){
+        window.location.replace("https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUM0YDQuNC60YDQvtC7");
+    }
+    </script>
+
+    <header class="mobile-header">
+        <div id="mySidenav" class="sidenav">
+            <div class="title-bar-controls">
+            <button href="javascript:void(0)" class="closebtn" aria-label="Close" onclick="closeNav()"></button>
+            </div>
+            <!-- <a href="javascript:void(0)" class="closebtn" aria-label="Minimize" onclick="closeNav()">&times;</a> -->
+            <li><button href="">Главная</button></li>
+            <li><button href="">Магазин</button></li>
+            <li><button href="">О нас</button></li>
+            <li><button href="">Связь</button></li>
+            <li><button onclick="rickroll()">Пугалка</button></li>
+        </div>
+        <div class="title-bar-controls">
+            <button aria-label="Maximize" onclick="openNav()"></button>
+        </div>
+        <div id="main"></div>
+    </header>
+
+    <script>
+        function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+    </script>
+
     <div class="window center-main-text" style="width: 50vw; font-size: large;">
         <div class="title-bar">
           <div class="title-bar-text" style="font-size: large;">
             <p>Добро пожаловать!</p>
           </div>
-          <div class="title-bar-controls">
-            <button aria-label="Minimize" onclick="minimizeButton()"></button>
-            <button aria-label="Maximize" onclick="maximizeButton()"></button>
-            <button aria-label="Close" onclick="closeButton()" style="margin-left: 0px; margin-right: 20px;"></button>
-          </div>
+          <div class="hidden">
+            <div class="title-bar-controls ">
+                <button aria-label="Minimize" onclick="minimizeButton()"></button>
+                <button aria-label="Maximize" onclick="maximizeButton()"></button>
+                <button aria-label="Close" onclick="closeButton()" style="margin-left: 0px; margin-right: 20px;"></button>
+            </div>
+         </div>
         </div>
         <div class="window-body">   
                 <div class="strok" id="result"></div>
@@ -57,74 +94,74 @@
             <h4>*Не настоящие, к сожалению </h4>
         </div>
      </div> -->
+    <div class="img-good"></div>
     <div class="wrapper wrpe">
         <img srcset="img/good-1920w.png 1920w, img/good-500w.png 500w" alt="">
     </div>
     <img class="absolute-center clip" src="img/c6afab251a20e6d0eb80b983450bc66e_w200.gif" alt="">
-        <div class="grid-component"> 
-            <!-- Чё ваще запихнуть можно: -->
-            <!-- Моники, Мышки, клавы, колонки, наушники, плееры, Приставки, +1 -->
-            <div class="window" >
-                <div class="title-bar">
-                <div class="title-bar-text">Мониторы</div>
+            <div class="grid-component"> 
+                <!-- Чё ваще запихнуть можно: -->
+                <!-- Моники, Мышки, клавы, колонки, наушники, плееры, Приставки, +1 -->
+                <div class="window" >
+                    <div class="title-bar">
+                    <div class="title-bar-text">Мониторы</div>
+                    </div>
+                    <div class="window-body">
+                        <img src="img/monitor.jpg">
+                        <p>Известны тем, что умеют показывать картинки, смешные видео с котами и анимешки.</p>
+                    </div>
                 </div>
-                <div class="window-body">
-                    <img src="img/monitor.jpg">
-                    <p>Известны тем, что умеют показывать картинки, смешные видео с котами и анимешки.</p>
+                <!-- Клавы -->
+                <div class="window" >
+                    <div class="title-bar">
+                    <div class="title-bar-text">Клавиатуры</div>
+                    </div>
+                    <div class="window-body">
+                        <img src="img/628e2db540f881859af2c6c95706ec77.jpg">
+                        <p>Помогают печатать сообщения в Аське, кушать крошки от бутербродов и играть в компьютерные игры стрелочками.</p>
+                    </div>
+                </div>
+                <!-- Мышки -->
+                <div class="window" >
+                    <div class="title-bar">
+                    <div class="title-bar-text">Мышки</div>
+                    </div>
+                    <div class="window-body">
+                        <img src="img/defender-130-1.jpg">
+                        <p>Управление курсором на экране никак не обойдётся без этих приятелей. Не забудьте почистить шарик от пыли !!!</p>
+                    </div>
+                </div>
+                <!-- Наушники -->
+                <div class="window" >
+                    <div class="title-bar">
+                    <div class="title-bar-text">Наушники</div>
+                    </div>
+                    <div class="window-body">
+                        <img src="img/08t6qugt58zoo36glpebzdbkltmywxzt.jpeg">
+                        <p>Хотите послушать новую песню Gorillaz или Глюк'oZы? Вам точно сюда!</p>
+                    </div>
+                </div>
+                <!-- Плееры -->
+                <div class="window" >
+                    <div class="title-bar">
+                    <div class="title-bar-text">Плееры</div>
+                    </div>
+                    <div class="window-body">
+                        <img src="img/1200px-Sony-wm-fx421-walkman.jpg">
+                        <p>Для комфортной поездки на скейте нет ничего лучше музыки, не забудьте взять с собой свой Walkman!</p>
+                    </div>
+                </div>
+                <!-- Приставки   -->
+                <div class="window">
+                    <div class="title-bar">
+                    <div class="title-bar-text">Приставки</div>
+                    </div>
+                    <div class="window-body">
+                        <img src="img/ZX_Spectrum+.jpg">
+                        <p>Самое то для того, чтобы поиграть в нововышедший Super Mario Bros, позвать друга для игры в танчики или научиться программировать на Ассемблере</p>
+                    </div>
                 </div>
             </div>
-            <!-- Клавы -->
-            <div class="window" >
-                <div class="title-bar">
-                <div class="title-bar-text">Клавиатуры</div>
-                </div>
-                <div class="window-body">
-                    <img src="img/628e2db540f881859af2c6c95706ec77.jpg">
-                    <p>Помогают печатать сообщения в Аське, кушать крошки от бутербродов и играть в компьютерные игры стрелочками.</p>
-                </div>
-            </div>
-            <!-- Мышки -->
-            <div class="window" >
-                <div class="title-bar">
-                <div class="title-bar-text">Мышки</div>
-                </div>
-                <div class="window-body">
-                    <img src="img/defender-130-1.jpg">
-                    <p>Управление курсором на экране никак не обойдётся без этих приятелей. Не забудьте почистить шарик от пыли !!!</p>
-                </div>
-            </div>
-            <!-- Наушники -->
-            <div class="window" >
-                <div class="title-bar">
-                <div class="title-bar-text">Наушники</div>
-                </div>
-                <div class="window-body">
-                    <img src="img/08t6qugt58zoo36glpebzdbkltmywxzt.jpeg">
-                    <p>Хотите послушать новую песню Gorillaz или Глюк'oZы? Вам точно сюда!</p>
-                </div>
-            </div>
-            <!-- Плееры -->
-            <div class="window" >
-                <div class="title-bar">
-                <div class="title-bar-text">Плееры</div>
-                </div>
-                <div class="window-body">
-                    <img src="img/1200px-Sony-wm-fx421-walkman.jpg">
-                    <p>Для комфортной поездки на скейте нет ничего лучше музыки, не забудьте взять с собой свой Walkman!</p>
-                </div>
-            </div>
-            <!-- Приставки   -->
-            <div class="window">
-                <div class="title-bar">
-                <div class="title-bar-text">Приставки</div>
-                </div>
-                <div class="window-body">
-                    <img src="img/ZX_Spectrum+.jpg">
-                    <p>Самое то для того, чтобы поиграть в нововышедший Super Mario Bros, позвать друга для игры в танчики или научиться программировать на Ассемблере</p>
-                </div>
-            </div>
-        </div>
-
     <footer>
         <div class="title-bar flex-bar">
             <div class="title-bar-text" style="margin-left: 1vw;">Сайт был разработан Жиляевым Евгением</div>
