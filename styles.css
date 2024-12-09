@@ -239,6 +239,9 @@ header {
     display: flex;
 }
 .console-mob-small {display: none;}
+.not-done {
+    filter: grayscale(2);
+}
 /*  МОБИЛКА */
 @media (max-width: 728px){
     .console-mob {display: block;}
