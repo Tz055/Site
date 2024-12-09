@@ -14,10 +14,10 @@
     <header class="window">
         <div class="title-bar title-bar-head">
             <ul>
-                <li><button href="">Главная</button></li>
-                <li><button href="">Магазин</button></li>
-                <li><button href="">О нас</button></li>
-                <li><button href="">Связь</button></li>
+                <li><button onclick="index()">Главная</button></li>
+                <li><button onclick="">Магазин</button></li>
+                <li><button onclick="aboutUs()">О нас</button></li>
+                <li><button onclick="">Связь</button></li>
                 <li><button onclick="rickroll()">Пугалка</button></li>
             </ul>
         </div>
@@ -25,6 +25,15 @@
     <script>
         function rickroll(){
         window.location.replace("https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUM0YDQuNC60YDQvtC7");
+    }
+    function index(){
+        window.location.replace("/index.html");
+    }
+    function ivan(){
+        window.location.replace("/ivan.html")
+    }
+    function aboutUs(){
+        window.location.replace("/about.html")
     }
     </script>
 
@@ -34,10 +43,10 @@
             <button href="javascript:void(0)" class="closebtn" aria-label="Close" onclick="closeNav()"></button>
             </div>
             <!-- <a href="javascript:void(0)" class="closebtn" aria-label="Minimize" onclick="closeNav()">&times;</a> -->
-            <li><button href="">Главная</button></li>
-            <li><button href="">Магазин</button></li>
-            <li><button href="">О нас</button></li>
-            <li><button href="">Связь</button></li>
+            <li><button onclick="">Главная</button></li>
+            <li><button onclick="">Магазин</button></li>
+            <li><button onclick="aboutUs()">О нас</button></li>
+            <li><button onclick="">Связь</button></li>
             <li><button onclick="rickroll()">Пугалка</button></li>
         </div>
         <div class="title-bar-controls">
@@ -166,7 +175,7 @@ function closeNav() {
     <footer>
         <div class="title-bar flex-bar">
             <div class="title-bar-text" style="margin-left: 1vw;">Сайт был разработан Жиляевым Евгением</div>
-            <div class="title-bar-text">© Копирайты все скопирайтили гы-гы-гы</div>
+            <div class="title-bar-text" onclick="ivan()">© Копирайты все скопирайтили гы-гы-гы</div>
           </div>
     </footer>
 

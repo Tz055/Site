@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/xp.css@0.2.3/dist/98.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/fixedsys-css/css/fixedsys.css">
+    <link rel="icon" href="favicon.ico">
+    <title>О нас</title>
+
+</head>
+<body onload="printMess()">
+    <header class="window">
+        <div class="title-bar title-bar-head">
+            <ul>
+                <li><button onclick="index()">Главная</button></li>
+                <li><button onclick="">Магазин</button></li>
+                <li><button onclick="aboutUs()">О нас</button></li>
+                <li><button onclick="">Связь</button></li>
+                <li><button onclick="rickroll()">Пугалка</button></li>
+            </ul>
+        </div>
+    </header>
+    <script>
+        function rickroll(){
+        window.location.replace("https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUM0YDQuNC60YDQvtC7");
+    }
+    function index(){
+        window.location.replace("/index.html");
+    }
+    function ivan(){
+        window.location.replace("/ivan.html")
+    }
+    function aboutUs(){
+        window.location.replace("/about.html")
+    }
+    </script>
+
+    <header class="mobile-header">
+        <div id="mySidenav" class="sidenav">
+            <div class="title-bar-controls">
+            <button href="javascript:void(0)" class="closebtn" aria-label="Close" onclick="closeNav()"></button>
+            </div>
+            <!-- <a href="javascript:void(0)" class="closebtn" aria-label="Minimize" onclick="closeNav()">&times;</a> -->
+            <li><button onclick="">Главная</button></li>
+            <li><button onclick="">Магазин</button></li>
+            <li><button onclick="aboutUs()">О нас</button></li>
+            <li><button onclick="">Связь</button></li>
+            <li><button onclick="rickroll()">Пугалка</button></li>
+        </div>
+        <div class="title-bar-controls">
+            <button aria-label="Maximize" onclick="openNav()"></button>
+        </div>
+        <div id="main"></div>
+        <script>
+            function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+    }
+    
+    /* Set the width of the side navigation to 0 */
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+        </script>
+    </header>
+    
+<!--  -->
+<div class="window">
+    <div class="window about-us-section">
+        <div class="title-bar">
+          <div class="title-bar-text">О нас</div>
+        </div>
+        <div class="window-body">
+      <p>Мы - команда студентов-энтузиастов, объединённые общей идеей и желающие воссоздать приятные воспоминания у людей, связанные со старым, "ламповым" интернетом. И если у вас возникло такое ощущение - мы крайне рады тому, что это всё-таки произошло.</p>
+      <p>Нашими приоритетами в создании являются:</p>
+      <ul class="tree-view">
+          <li style="font-size: large;">Стиль✨💫</li>
+          <li style="font-size: large;">Удобность пользования</li>
+          <li style="font-size: large;">Ваши приятные воспоминания!</li>
+      </ul>
+      
+      <p class="about-us-p">А вот и наша команда!</p>
+        </div>
+
+        
+        <div class="about-us-img">
+            <img src="img/1ya.png" alt="">
+            <img src="img/2ya.png">
+            <img src="img/3ya.png">
+        </div>
+        <div class="status-bar about-us-img">
+          <p class="status-bar-field">UI Дизайнер / Вёрстка</p>
+          <p class="status-bar-field">JavaScript разработчик</p>
+          <p class="status-bar-field">Системный администратор</p>
+        </div>
+        <div class="window-body">
+            <pre>Microsoft&#10094;R&#10095; Windows DOS 
+        &#10094;C&#10095; Copyright Microsoft Corp 1990-2024.
+              <br>C:&#92;WINDOWS&#92;SYSTEM32> cd ../Spasibo/za/pro4tenie/vi/Super.EXE
+            </pre>
+          </div>
+      </div>
+      
+</div>
+<!--  -->
+
+<footer>
+    <div class="title-bar flex-bar">
+        <div class="title-bar-text" style="margin-left: 1vw;">Сайт был разработан Жиляевым Евгением</div>
+        <div class="title-bar-text" onclick="ivan()">© Копирайты все скопирайтили гы-гы-гы</div>
+      </div>
+</footer>
