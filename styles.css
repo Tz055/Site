@@ -217,6 +217,24 @@ header {
 .console-mob {
     display: none;
 }
+.card-view {
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+.card-view img {
+    max-width: 20vw;
+    max-height: 40vh;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.card-view p {
+    font-size: larger;
+    margin: 20px;
+}
+.card-view-content {
+    display: flex;
+}
 .console-mob-small {display: none;}
 /*  МОБИЛКА */
 @media (max-width: 728px){
@@ -225,6 +243,18 @@ header {
     .console-mob-small {display: none;}
 }
 @media (max-width: 500px) {
+    .card-view-content{
+        display: flex;
+        flex-direction: column;
+    }
+    .card-view img {
+        max-width: 70vw;
+        max-height: 40vh;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
     .about-us-img {
         display: none;
     }
